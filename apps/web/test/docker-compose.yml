@@ -10,6 +10,7 @@ services:
     ports:
       - "5433:5432"
     environment:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
       POSTGRES_USER: prisma
       POSTGRES_PASSWORD: prisma
       POSTGRES_DB: tests
